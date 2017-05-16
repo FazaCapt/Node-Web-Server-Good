@@ -19,19 +19,6 @@ Install:
 
 #Cara Kerjanya:
     - Lihat di Browser => developer tools => network => localhost => Header
-
-Heroku:
-    1. heroku login
-    2. heroku keys:add
-    3. heroku keys
-    4. heroku remove (options)
-    5. env (bila mau liat options)
-    6. Buat 'const port = process.env.PORT || 3000' di server
-    7. buat 'npm start' di Package.json dengan 'node server.js'
-    8. heroku create
-    9. git push heroku
-    10. heroku open
-    11. 'https://dry-fortress-28443.herokuapp.com/'
         
 Catatan / Penjelasan: 
 
@@ -73,3 +60,16 @@ Catatan / Penjelasan:
     - Dalam kebanyakan kasus, mungkin untuk menukar mustache dengan setang dan terus menggunakan template Anda saat ini. 
 5. Request, Response, Next (Express Middlewere)
     - Bila ingin melihat methode dll ada disini 'http://expressjs.com/en/4x/api.html#req'
+    
+Heroku:
+    1. heroku login
+    2. heroku keys:add
+    3. heroku keys
+    4. heroku remove (options)
+    5. env (bila mau liat options)
+    6. Buat 'const port = process.env.PORT || 3000' di server
+    7. buat 'npm start' di Package.json dengan 'node server.js'
+    8. heroku create
+    9. git push heroku
+    10. heroku open
+    11. 'https://dry-fortress-28443.herokuapp.com/'
