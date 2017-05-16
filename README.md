@@ -21,17 +21,17 @@ Install:
     - Lihat di Browser => developer tools => network => localhost => Header
 
 Heroku:
-    - heroku login
-    - heroku keys:add
-    - heroku keys
-    - heroku remove (options)
-    - env (bila mau liat options)
-    - Buat 'const port = process.env.PORT || 3000' di server
-    - buat 'npm start' di Package.json dengan 'node server.js'
-    - heroku create
-    - git push heroku
-    - heroku open
-    - 'https://dry-fortress-28443.herokuapp.com/'
+    1. heroku login
+    2. heroku keys:add
+    3. heroku keys
+    4. heroku remove (options)
+    5. env (bila mau liat options)
+    6. Buat 'const port = process.env.PORT || 3000' di server
+    7. buat 'npm start' di Package.json dengan 'node server.js'
+    8. heroku create
+    9. git push heroku
+    10. heroku open
+    11. 'https://dry-fortress-28443.herokuapp.com/'
         
 Catatan / Penjelasan: 
 
