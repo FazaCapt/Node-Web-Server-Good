@@ -12,6 +12,7 @@ Silabus:
 
 Install:
 1. npm install express@4.15.2 --save 'https://www.npmjs.com/package/express'
+2. npm install hbs@4.0.1 --save 'https://www.npmjs.com/package/hbs'
 
 #Cara Kerjanya:
     - Lihat di Browser => developer tools => network => localhost => Header
@@ -50,4 +51,7 @@ Catatan / Penjelasan:
     - package.json 
         - berisi struktur JSON yang mendefinisikan profil proyek dan dependensi paket apa saja yang dibutuhkan aplikasi yang kita kembangkan. 
         - NPM akan melacak dependensi dengan melihat file ini
-
+4. handlebars.js 'http://handlebarsjs.com/'
+    - Handlebars menyediakan kekuatan yang diperlukan untuk membiarkan Anda membuat template semantik secara efektif tanpa frustrasi.
+    - Handlebars sebagian besar kompatibel dengan template mustache. 
+    - Dalam kebanyakan kasus, mungkin untuk menukar mustache dengan setang dan terus menggunakan template Anda saat ini. 
