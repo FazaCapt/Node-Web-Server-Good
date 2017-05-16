@@ -1,0 +1,11 @@
+Fungsi Middleware 
+
+- sebuah fungsi yang memiliki akses ke request object, response objet, dan fungsi next pada siklus request-response dalam aplikasi. 
+- Jika fungsi next tidak dipanggil, maka request akan berhenti pada fungsi middleware tersebut dan fungsi .get tidak dapat berjalan.
+
+Berikut adalah contoh penggunaan fungsi middleware
+
+- Pada contoh ini penulis akan membuat sebuah kalimat yang ditulis dalam middleware, kalimat tersebut akan muncul dalam server terminal ketika request dijalankan. 
+- Dalam contoh ini penulis juga akan menjelaskan konsep dasar pada middleware.
+
+Pertama, Install express.js pada folder dimana kita akan membuat aplikasi dengan cara: dalam command prompt masuk ke direktori file lalu ketik npm install express. Lalu buat file dengan nama latihan.js. Dalam file tersebut panggil modul express.js dengan menggunakan syntax: 
