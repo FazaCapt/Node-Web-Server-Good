@@ -1,8 +1,11 @@
 // Rendering Templates with Data
-// Advanced Templating 13:37
+// Advanced Templating
+// express Middleware
 
 const express = require('express');
 const hbs = require('hbs');
+const fs = require('fs');
+const port = process.env.PORT || 3000;
 
 var app = express();
 
@@ -13,11 +16,24 @@ hbs.registerPartials(__dirname + '/views/partials');
 hbs.registerHelper('getCurrentYear', () => {
     return new Date().getFullYear();
 })
-
 hbs.registerHelper('screemIt', (text) => {
     return text.toUpperCase();
 });
 
+//Ini Bila ingin membuat penjelasan di console
+app.use((req, res, next) => {
+    var now = new Date().toString();
+    var log = `${now}: ${req.method} ${req.url}`
+    console.log(log);
+    //ini membuat file server.log || Jadi buat catatan pindahnya routes
+    fs.appendFile('server.log', log + '\n');
+    next();
+})
+
+//Ini untuk maintanance, bila terjadi perbaikan
+// app.use((req, res, next) => {
+//     res.render('maintanance.hbs');
+// });
 
 app.get('/', (req, res) => {
     res.render('home.hbs', {
@@ -39,6 +55,6 @@ app.get('/bad', (req, res) => {
         errorMessage: 'Unable to handle Request'
     });
 });
-app.listen(3000, () => {
-    console.log('Server is up on port 3000');
+app.listen(port, () => {
+    console.log(`Server is up on ${port} `);
 });

@@ -1,16 +1,17 @@
 {
-  "name": "node-web-server",
-  "version": "1.0.0",
-  "description": "Silabus: 1. Section Intro 1:07 2. Hello Express 16:51 3. Creating a Web Server 7:12 4. Rendering Templates with Data 13:53 5. Advanced Templating 13:37 6. Express Middleware 16:13 7. Adding Version Control (Git) 12:31 8. Setting Up GitHub & SSH Keys 13:29 9. Deploying Your Apps 15:07 10. Adding a New Feature and Deploying",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.15.2",
-    "hbs": "^4.0.1"
-  }
+    "name": "node-web-server",
+    "version": "1.0.0",
+    "description": "Silabus: 1. Section Intro 1:07 2. Hello Express 16:51 3. Creating a Web Server 7:12 4. Rendering Templates with Data 13:53 5. Advanced Templating 13:37 6. Express Middleware 16:13 7. Adding Version Control (Git) 12:31 8. Setting Up GitHub & SSH Keys 13:29 9. Deploying Your Apps 15:07 10. Adding a New Feature and Deploying",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.15.2",
+        "hbs": "^4.0.1"
+    }
 }

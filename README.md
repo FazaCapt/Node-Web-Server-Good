@@ -6,17 +6,32 @@ Silabus:
 5. Advanced Templating 13:37
 6. Express Middleware 16:13
 7. Adding Version Control (Git) 12:31
-8. Setting Up GitHub & SSH Keys 13:29
+8. Setting Up GitHub & SSH Keys 13:29 'https://help.github.com/articles/connecting-to-github-with-ssh/'
 9. Deploying Your Apps 15:07
 10. Adding a New Feature and Deploying 
 
 Install:
 1. npm install express@4.15.2 --save 'https://www.npmjs.com/package/express'
 2. npm install hbs@4.0.1 --save 'https://www.npmjs.com/package/hbs'
+3. install cli Heroku 'https://devcenter.heroku.com/articles/heroku-cli' (toolbelt.heroku.com)
+
+
 
 #Cara Kerjanya:
     - Lihat di Browser => developer tools => network => localhost => Header
-
+    - Heroku
+        - heroku login
+        - heroku keys:add
+        - heroku keys
+        - heroku remove (options)
+        - env (bila mau liat options)
+        - Buat 'const port = process.env.PORT || 3000' di server
+        - buat 'npm start' di Package.json dengan 'node server.js'
+        - heroku create
+        - git push heroku
+        - heroku open
+        - 'https://dry-fortress-28443.herokuapp.com/'
+        
 Catatan / Penjelasan: 
 
     Membuat Web Server dengan NodeJS
@@ -55,3 +70,5 @@ Catatan / Penjelasan:
     - Handlebars menyediakan kekuatan yang diperlukan untuk membiarkan Anda membuat template semantik secara efektif tanpa frustrasi.
     - Handlebars sebagian besar kompatibel dengan template mustache. 
     - Dalam kebanyakan kasus, mungkin untuk menukar mustache dengan setang dan terus menggunakan template Anda saat ini. 
+5. Request, Response, Next (Express Middlewere)
+    - Bila ingin melihat methode dll ada disini 'http://expressjs.com/en/4x/api.html#req'
